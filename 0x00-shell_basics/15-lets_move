@@ -1,2 +1,2 @@
 #!/bin/bash
-mv [[:digit:]]* /tmp/u/
+mv [[:digit:]]* /tmp/u
