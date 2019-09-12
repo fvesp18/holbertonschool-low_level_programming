@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --deference betty:holberton .
+chown -h betty:holberton .
