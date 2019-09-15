@@ -1,2 +1,2 @@
 #!/bin/bash
-file . -name "*.gif" -type f | rev | cut -f 2- "fig.*" | rev | sort
+file -name "*.gif" -type f | rev | cut -d. -f 2- | rev | sort LC_ALL=C
