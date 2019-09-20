@@ -6,13 +6,11 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
-	char ch;
-
-	for(ch = 97; ch <=122; ch++)
+	while  (ch != 103 || ch != 113 || ch <= 122)
 		putchar(ch);
-	if (ch = 113 || ch = 101)
-		putchar!(ch);
+	ch++;
+
 	return (0);
 }
