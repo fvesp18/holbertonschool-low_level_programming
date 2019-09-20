@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - two fors and a space
+ * main - for loops and more
  *
  *
  * Return: 0
@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	int a;
-	int b;
+	int first;
+	int second;
 
-	for (a = '0'; a <= '9'; a++)
+	for (first = '0'; first <= '9'; first++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		for (second ='0'; second <= '9'; second++)
 		{
-		putchar(a);
-		putchar(b);
-		putchar(',');
-		putchar(' ');
-		}
-		if (a == '9' && a== '9')
-		{
-			putchar(' ');
+			putchar(first);
+			putchar(second);
+
+			if (!(first == '9' && second == '9'))
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	return (0);
