@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - two fors and a space
+ * main - for loops and more
  *
  *
  * Return: 0
@@ -17,13 +17,13 @@ int main(void)
 		{
 		putchar(a);
 		putchar(b);
-		putchar(',');
-		putchar(' ');
-		}
-		if (a == '9' && a== '9')
-		{
-			putchar(' ');
+		putchar(',  ');
 		}
 	}
+		if (a == '9' && b == '9')
+		{
+		putchar(' ');
+		}
+	putchar('\n');
 	return (0);
 }
