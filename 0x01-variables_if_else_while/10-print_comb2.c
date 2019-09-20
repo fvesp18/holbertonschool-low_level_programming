@@ -13,7 +13,7 @@ int main(void)
 
 	for (first = '0'; first <= '9'; first++)
 	{
-		for (second ='0'; second <= '9'; second++)
+		for (second = '0'; second <= '9'; second++)
 		{
 			putchar(first);
 			putchar(second);
@@ -25,5 +25,6 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
