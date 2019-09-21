@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o main -masm=intel
+gcc -S $CFILE -o main.s -masm=intel
