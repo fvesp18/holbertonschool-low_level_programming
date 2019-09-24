@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * _abs(int) - point of entry
- * @int: parameter
+ * _abs - point of entry
+ * @n: parameter
  * Return: 0, +, -
  */
 
