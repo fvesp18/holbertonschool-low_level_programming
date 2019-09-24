@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * main - entry point, is lower function
- *
- * Return: 0 if uppercase
- * Return: 1 if lowercase
+ * _islower - entry point
+ * @c: is a parameter
+ * Description: Will return 1 if lower, 0 if upper
+ * Return: 1 if lower, else 0
  */
 
 int _islower(int c)
