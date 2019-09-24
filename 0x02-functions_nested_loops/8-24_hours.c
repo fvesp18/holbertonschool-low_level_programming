@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ * jack_bauer - main entry
+ * Return: void
  */
 
 void jack_bauer(void)
