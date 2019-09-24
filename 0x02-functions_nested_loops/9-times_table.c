@@ -5,30 +5,26 @@
  * Return: 0
  */
 
-void times_tables(int *)
+void times_table(void)
 {
 	int loop;
-	int mult;
+	int column;
 	int first = 0;
-	int second = 9;
-	int product = first * second;
+	int prod = first * column;
 
-	for (loop = 0; loop <= 9; loop++)
+	for (column = 0; column <= 9; column++)
 	{
-		while (first == 0)
+		for (loop = 0; loop <= 9; loop++)
 		{
-		_putchar(first + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar('\n');
-		}
-		first++;
-		for (mult = 0; mult <= 9; mult++)
-		{
-			_putchar(product + '0');
+			_putchar(first + '0');
+			if (loop != 9)
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			if (loop == 9)
+			_putchar('\n');
+			if (loop > 9)
+				_putchar(prod);
 		}
 	}
 }
