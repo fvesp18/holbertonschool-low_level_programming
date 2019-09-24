@@ -2,6 +2,8 @@
 
 /**
  * add - entry point, addition
+ * @one: some integer
+ * @two: some other integer
  * Return: sum
  */
 
