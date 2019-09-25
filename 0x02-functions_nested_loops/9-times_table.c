@@ -23,6 +23,7 @@ void times_table(void)
 			}
 			else if (prod <= 9)
 			{
+				if (column != 0)
 				_putchar(' ');
 				_putchar(prod + '0');
 			}
