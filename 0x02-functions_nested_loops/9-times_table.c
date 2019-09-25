@@ -15,16 +15,23 @@ void times_table(void)
 	{
 		for (column = 0; column <= 9; column++)
 		{
-			prod = row * column;
-			_putchar(prod + '0');
-			if (column != 9)
-				_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			if (column == 9)
-				_putchar('\n');
-			if (column > 9)
+			prod = column * row;
+			if (prod > 9)
+			{
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
+			}
+			else if (prod <= 9)
+			{
+				_putchar(' ');
 				_putchar(prod + '0');
+			}
+			if (column != 9)
+			{
+			_putchar(',');
+			_putchar(' ');
+			}
 		}
+		_putchar('\n');
 	}
 }
