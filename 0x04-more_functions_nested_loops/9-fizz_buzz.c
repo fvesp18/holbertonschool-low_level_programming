@@ -24,19 +24,13 @@ int main(void)
 		{
 			printf("Fizz");
 		}
-		else if (num >= 1 && num < 100)
+		else
 		{
-			if (num == 1)
-			{
 			printf("%d", num);
+		}
+		if (num < 100)
+		{
 			putchar(32);
-			}
-			else if (num != 1)
-			{
-				putchar(32);
-				printf("%d", num);
-				putchar(32);
-			}
 		}
 		num++;
 	}
