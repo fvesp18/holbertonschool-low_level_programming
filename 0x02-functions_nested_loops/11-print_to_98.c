@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - point of entry
- *
+ * @n: point of iteration
  * Return: 0
  */
 
