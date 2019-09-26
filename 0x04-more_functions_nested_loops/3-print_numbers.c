@@ -3,7 +3,7 @@
 /**
  * print_numbers - point of entry
  *
- * Return: 0
+ * Return: void
  */
 
 void print_numbers(void)
