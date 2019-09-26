@@ -14,7 +14,7 @@ void print_diagonal(int n)
 	{
 		for (spa = 1; spa <= n; spa++)
 		{
-			for (dia = 0; dia < spa; dia++)
+			for (dia = 1; dia < spa; dia++)
 			{
 				if (spa != 0)
 				{
@@ -25,11 +25,11 @@ void print_diagonal(int n)
 				{
 					_putchar(92);
 					_putchar(10);
-			 	}
+				}
 		}
 	}
 
-	if (n <= 0)
+	else
 	{
 		_putchar(10);
 	}
