@@ -14,19 +14,21 @@ int main(void)
 	{
 		if ((num % 15) == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if ((num % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if ((num % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
-		else
+		if (num < 100)
 		{
+			putchar(32);
 			printf("%d", num);
+			putchar(32);
 		}
 		num++;
 	}
