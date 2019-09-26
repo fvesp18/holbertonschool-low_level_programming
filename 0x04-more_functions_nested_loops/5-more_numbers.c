@@ -2,7 +2,6 @@
 
 /**
  * more_numbers - point of entry
- *
  * Return: void
  */
 
@@ -13,7 +12,7 @@ void more_numbers(void)
 
 	for (loop = 0; loop <= 9; loop++)
 	{
-		for(numbers = 0; numbers <= 14; numbers++)
+		for (numbers = 0; numbers <= 14; numbers++)
 		{
 			if (numbers > 9)
 			{
