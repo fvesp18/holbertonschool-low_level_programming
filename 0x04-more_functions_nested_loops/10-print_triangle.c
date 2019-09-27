@@ -12,6 +12,13 @@ void print_triangle(int size)
 	int space;
 	int hash;
 
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
+	if (size > 0)
+	{
 	for (loop = 1; loop <= size; loop++)
 	{
 		for (space = size; space > loop; space--)
@@ -23,5 +30,6 @@ void print_triangle(int size)
 			_putchar('#');
 		}
 		_putchar('\n');
+	}
 	}
 }
