@@ -8,11 +8,12 @@
 
 void puts2(char *str)
 {
-	int dig;
+	int dig = 0;
 
-	for (dig = 0; dig <= 8; dig += 2)
+	while (str[dig] != '\0')
 	{
 	_putchar(str[dig]);
+	dig += 2;
 	}
 	_putchar('\n');
 }
