@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * _puts - will print the string *str
- * @str: location of str
+ * print_rev - will print the string *s in reverse
+ * @s: location of string
  * Return: void
  */
 
