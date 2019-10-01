@@ -12,8 +12,11 @@ void puts2(char *str)
 
 	while (str[dig] != '\0')
 	{
-	_putchar(str[dig]);
-	dig += 2;
+		if (dig % 2 == 0)
+	{
+		_putchar(str[dig]);
+	}
+		dig++;
 	}
 	_putchar('\n');
 }
