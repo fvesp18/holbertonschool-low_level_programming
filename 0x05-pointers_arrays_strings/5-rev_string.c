@@ -9,27 +9,23 @@
 void rev_string(char *s)
 {
 	int count = 0;
-	char *first, *last;
+	int lind, rind;
 	char temp;
-	int ch = 0;
+	int i;
 
 	while (s[count] != '\0')
 	{
 		count++;
-      	}
-	while (ch < (count--))
-	{
-		last++;
-		ch++;
 	}
-	while(ch < (count / 2))
-	{
-		temp = *last;
-		*last = *first;
-		*first = temp;
-		first++;
-		last--;
 
-		ch++;
+	lind = s[count];
+	rind = count - 1;
+
+	for (i = lind; i < rind; i++)
+	{
+		temp = s[i];
+		s[i] = s[rind];
+		s[rind] = temp;
+		rind--;
 	}
 }
