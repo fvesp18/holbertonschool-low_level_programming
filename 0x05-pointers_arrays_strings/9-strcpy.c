@@ -10,7 +10,8 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
-	int f = i + 2;
+	int f = i + 1;
+	char *holder = dest;
 
 	if ((src[i] != '\0') && (dest[f] != '\0'))
 	{
@@ -20,5 +21,5 @@ char *_strcpy(char *dest, char *src)
 		}
 		*dest = '\0';
 	}
-	return (dest);
+	return (holder);
 }
