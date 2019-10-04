@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * _strncat - concatenate two strings
  * @dest: destination string
@@ -17,13 +17,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest++;
 	}
-	while (n--)
+	while (n-- && *src != '\0')
 	{
-		if (!(*dest++ == *src++))
-		return (out);
+		*dest++ = *src++;
 	}
-
-	*dest = 0;
-
 	return (out);
 }
