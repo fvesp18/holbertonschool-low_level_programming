@@ -2,7 +2,6 @@
 
 /**
  * cap_string - capitalize every word in string
- * @scnt: counter
  * @s: string
  * Return: s
  */
@@ -26,7 +25,7 @@ char *cap_string(char *s)
 		while (sep[cnt] != '\0')
 		{
 			if (s[scnt - 1] == sep[cnt] && (s[scnt] >= 'a' && s[scnt] <= 'z'))
-		       	{
+			{
 				s[scnt] -= 'a' - 'A';
 			}
 			cnt++;
