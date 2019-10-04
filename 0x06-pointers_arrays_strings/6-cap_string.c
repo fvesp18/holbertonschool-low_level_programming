@@ -1,23 +1,37 @@
 #include "holberton.h"
-#define MAX_SIZE 100
 
 /**
  * cap_string - capitalize every word in string
- * @i: counter
+ * @scnt: counter
  * @s: string
- * Return: 0
+ * Return: s
  */
 
 char *cap_string(char *s)
 {
-	char str[MAX_SIZE];
 
-	while (*s)
+	int scnt = 0;
+	int cnt;
+	char *sep = ",\" ;.!?(){}\n\t";
+
+	if (s[0] >= 'a' && s[0] <= 'z')
 	{
-		s = str;
-	       	*s = (*s >= 'a' && *s <= 'z') ? *s - 32 : *s;
-       		s++;
+		s[0] -= 'a' - 'A';
 	}
 
-	return (0);
+	while (s[scnt] != '\0')
+	{
+		cnt = 0;
+
+		while (sep[cnt] != '\0')
+		{
+			if (s[scnt - 1] == sep[cnt] && (s[scnt] >= 'a' && s[scnt] <= 'z'))
+		       	{
+				s[scnt] -= 'a' - 'A';
+			}
+			cnt++;
+		}
+		scnt++;
+	}
+	return (s);
 }
