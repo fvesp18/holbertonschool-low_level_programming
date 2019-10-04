@@ -6,12 +6,14 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	while (src[n] != '\0')
+	int fir;
+
+	for (fir = 0; fir < n && src[fir] != '\0'; fir++)
 	{
-		++n;
-		dest[n] = src[n];
+		dest[fir] = src[fir];
 	}
-	dest[n] = '\0';
+	for (; fir < n; fir++)
+		dest[fir] = '\0';
 
 	return (dest);
 }
