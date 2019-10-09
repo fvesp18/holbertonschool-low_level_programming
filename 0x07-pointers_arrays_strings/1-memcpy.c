@@ -4,6 +4,7 @@
  * _memcpy - copies str src to str dest
  * @src: source string
  * @dest: destination for copy
+ * @n: size
  * Return: dest
  */
 
