@@ -3,14 +3,14 @@
 /**
  * _strspn - get length of prefix substring
  * @s: main string
- * @accpt: substring
+ * @accept: substring
  * Return: none
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	int ii = 0;
-	unsigned hold;
+	unsigned int hold;
 
 	for (; *s != '\0'; s++)
 	{
