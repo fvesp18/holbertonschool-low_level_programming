@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * _strlen_recursion - find strlen
+ * _strlen_recursion - counts chars in str
  * @s: string
+ * Return: 0, or count
  */
 
 int _strlen_recursion(char *s)
