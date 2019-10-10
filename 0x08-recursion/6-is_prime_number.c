@@ -14,10 +14,10 @@ int helper(int n, int div)
 		return (n == 2);
 	}
 
-       	if (n % div ==  0)
-       	{
-       		return (0);
-       	}
+	if (n % div ==  0)
+	{
+		return (0);
+	}
 
 	if (div * div > n)
 	{
@@ -27,8 +27,8 @@ int helper(int n, int div)
 }
 
 /**
- * is_prime_number - determines if a number is prime or not\
- * @n: number at hand
+ * is_prime_number - determines if a number is prime or not
+ * @n: parameter
  * Return: 1, if prime, 0 if not
  */
 
@@ -36,6 +36,5 @@ int is_prime_number(int n)
 {
 	if (n == 0)
 		return (0);
-
-       	return (helper(n, 2));
+	return (helper(n, 2));
 }
