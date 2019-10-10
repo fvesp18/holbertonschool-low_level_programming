@@ -5,8 +5,8 @@ int _strlen_recursion(char *s);
 /**
  * helper - recursion helper
  * @s: string
- * @ind: 0 index
- * @len: length
+ * @b: 0 index
+ * @e: end index
  * Return: 0, if false, 1 if true
  */
 int helper(char *s, int b, int e)
