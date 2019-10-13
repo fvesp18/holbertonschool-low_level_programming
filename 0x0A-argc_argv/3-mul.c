@@ -11,11 +11,11 @@
 
 int main(int argc, char **argv)
 {
-	int prod = 1;
+	int prod;
 
 	if (argc == 3)
 	{
-		prod = atoi(argv[argc + 1]) * atoi(argv[argc + 2]);
+		prod = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", prod);
 	}
 
