@@ -10,29 +10,28 @@
 
 char *create_array(unsigned int size, char c)
 {
-  unsigned int count; 
-  char *some_a;
+	unsigned int count;
+	char *some_a;
 
-  if (size == 0)
-    {
-      return ('\0');
-    }
+	if (size == 0)
+	{
+		return ('\0');
+	}
+	some_a = malloc(size * sizeof(unsigned int));
 
-  some_a = malloc(size * sizeof(unsigned int));
+	if (some_a == '\0')
+	{
+		return ('\0');
+	}
 
-  if (some_a == '\0')
-    {
-      return ('\0');
-    }
+	count = 0;
+	while (count < size)
+	{
+		some_a[count] = c;
+		count++;
+	}
 
-  count = 0;
-  while (count < size)
-    {
-      some_a[count] = c;
-      count++;
-    }
+       	some_a[count] = '\0';
 
-  some_a[count] = '\0';
-
-  return (some_a);
+	return (some_a);
 }
