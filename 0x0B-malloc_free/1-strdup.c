@@ -18,10 +18,9 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/* finds str length */
-	for (size = 0; str[size] != '\0'; size++);
-	{
+	for (size = 0; str[size] != '\0'; size++)
 		;
-	}
+
 	size++;
 
 	/* allocates memory for string duplicate */
