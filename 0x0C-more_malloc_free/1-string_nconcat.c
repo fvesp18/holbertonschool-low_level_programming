@@ -18,9 +18,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* check for empty strings */
 	if (s1 == NULL)
-		s1 = "\0";
+		s1 = "";
 	if (s2 == NULL)
-		s2 = "\0";
+		s2 = "";
 
 	/* find length of strings */
 	for (count = 0; s1[count] != '\0'; count++)
@@ -41,14 +41,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* duplicate s1 to cat */
 	for (count = 0; count < len1; count++)
+	{
 		cat[count] = s1[count];
-
+	}
 	/* add s2 to end of s1 to cat */
-	for (begs = 0; begs <= n; begs++, count++)
+	for (begs = 0; begs < n; begs++, count++)
+	{
 		cat[count] = s2[begs];
-
+	}
 	cat[count] = '\0';
-
 	/* return pointer */
 	return (cat);
 }
