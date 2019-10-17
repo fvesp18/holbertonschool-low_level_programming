@@ -17,9 +17,9 @@ char *str_concat(char *s1, char *s2)
 
 	/* check for empty strings */
 	if (s1 == NULL)
-		s1 = '\0';
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = '\0';
+		s2 = "\0";
 
 	/* find length of strings */
        	for (count = 0; s1[count] != '\0'; count++)
@@ -35,17 +35,15 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	/* duplicate s1 to cat */
-	/* if (s1 != '\0') */
        	for (count = 0; count < len1; count++)
 	       	cat[count] = s1[count];
 
 	/* add s2 to end of s1 to cat */
-	/* if (s2 != '\0') */
        	for (begs = 0; begs < len2; begs++, count++)
        		cat[count] = s2[begs];
 
 	/* set last block to null byte */
-	cat[count] = '\0';
+	/* cat[count] = '\0'; */
 
 	/* return pointer */
 	return (cat);
