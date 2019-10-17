@@ -22,10 +22,10 @@ char *str_concat(char *s1, char *s2)
 		s2 = "\0";
 
 	/* find length of strings */
-       	for (count = 0; s1[count] != '\0'; count++)
-	       	len1++;
+	for (count = 0; s1[count] != '\0'; count++)
+		len1++;
 	for (count = 0; s2[count] != '\0'; count++)
-	       	len2++;
+		len2++;
 
 	/* allocate memory for concatenated string */
 	cat = malloc((len1 + len2 + 1) * sizeof(char));
@@ -35,15 +35,12 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	/* duplicate s1 to cat */
-       	for (count = 0; count < len1; count++)
-	       	cat[count] = s1[count];
+	for (count = 0; count < len1; count++)
+		cat[count] = s1[count];
 
 	/* add s2 to end of s1 to cat */
-       	for (begs = 0; begs < len2; begs++, count++)
-       		cat[count] = s2[begs];
-
-	/* set last block to null byte */
-	/* cat[count] = '\0'; */
+	for (begs = 0; begs < len2; begs++, count++)
+		cat[count] = s2[begs];
 
 	/* return pointer */
 	return (cat);
