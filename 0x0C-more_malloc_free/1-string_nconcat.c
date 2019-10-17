@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         for (count = 0; s2[count] != '\0'; count++)
                 len2++;
 
-	if (n > len2)
+	if (n >= len2)
 		n = len2;
 
         /* allocate memory for concatenated string */
