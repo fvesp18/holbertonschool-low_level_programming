@@ -10,7 +10,6 @@ void print_all(const char * const format, ...)
 {
 	unsigned int it = 0;
 	va_list vars;
-	char *st;
 
 	va_start(vars, format);
 	while (format[it])
@@ -27,13 +26,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(vars, double));
 				break;
 			case 's':
-				st = va_arg(vars, char *);
-				if (st)
-				{
-					printf("%s", st);
-					break;
-				}
-				printf("(ni;)");
+				printf("%s", va_arg(vars, char *));
 				break;
 			default:
 				printf(", ");
