@@ -9,11 +9,15 @@
 void print_all(const char * const format, ...)
 {
 	unsigned int it = 0;
+	unsigned int flag;
+	char *s;
 	va_list vars;
 
 	va_start(vars, format);
-	while (format[it])
+	while (format && format[it])
 	{
+		if (it != 0 && !flag)
+			printf(", ");
 		switch (format[it])
 		{
 			case 'c':
@@ -26,12 +30,20 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(vars, double));
 				break;
 			case 's':
-				printf("%s", va_arg(vars, char *));
+				s = va_arg(vars, char *);
+				if (s == NULL)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", s);
 				break;
 			default:
-				printf(", ");
-				break;
+				flag = 1;
+				it++;
+				continue;
 		}
+	flag = 0;
 	it++;
 	}
 	va_end(vars);
