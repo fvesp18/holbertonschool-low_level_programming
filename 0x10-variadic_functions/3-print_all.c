@@ -8,8 +8,9 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int it;
+	unsigned int it = 0;
 	va_list vars;
+	char *st;
 
 	va_start(vars, format);
 	while (format[it])
@@ -26,7 +27,13 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(vars, double));
 				break;
 			case 's':
-				printf("%s", va_arg(vars, char *));
+				st = va_arg(vars, char *);
+				if (st)
+				{
+					printf("%s", st);
+					break;
+				}
+				printf("(ni;)");
 				break;
 			default:
 				printf(", ");
