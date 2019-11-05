@@ -2,7 +2,7 @@
 /**
  * add_node_end - adds an node to the end of a list
  * @head: head of list
- * @str: string
+ * @str: string to be past
  * Return: NULL, or new_node
  */
 list_t *add_node_end(list_t **head, const char *str)
