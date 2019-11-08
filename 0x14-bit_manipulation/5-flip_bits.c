@@ -7,9 +7,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	if (n)
-		return (n);
-	if (m)
-		return (m);
-	return (0);
+	int mask = 0;
+	int index;
+
+	index = n ^ m;
+	while (index > 0)
+	{
+		if (index & 1)
+		{
+			mask++;
+		}
+		index >>= 1;
+	}
+	return (mask);
 }
