@@ -1,16 +1,18 @@
 #include "holberton.h"
 /**
- * clear_bit - clears bit at index
- * @n: integer to be processed
- * @index: index of bit
- * Return: some int
+ * clear_bit - clear bit at index to 1
+ * @n: int at hand
+ * @index: index
+ * Return: bit at index, or -1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if (*n)
-		return (-1);
-	if (index)
-		return (index);
+	int mask = 1 << index;
 
-	return (1);
+	if (sizeof(n) * 8)
+	{
+		*n = (*n & ~mask);
+		return (1);
+	}
+	return (-1);
 }
