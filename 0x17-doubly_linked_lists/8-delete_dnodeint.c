@@ -33,13 +33,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	next = buff->next->next;
 
-/*	if (*head == buff)
+	if (*head == buff)
 		*head = buff->next;
 	if (buff->next)
 		buff->next->prev = buff->prev;
 	if (buff->prev)
 		buff->prev->next = buff->next;
-*/
+
 	free(buff->next);
 	buff->next = next;
 
