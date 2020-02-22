@@ -1,7 +1,7 @@
 # Makefile for task 6 100-Makefile
 CC=gcc
 SRC=main.c holberton.c
-OBJ=$(SRC:.c=.o)
+OBJ=$(patsubst %.c,%.o,$(SRC))
 NAME=holberton
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
