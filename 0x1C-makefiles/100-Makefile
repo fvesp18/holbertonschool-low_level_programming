@@ -1,7 +1,6 @@
-CC=gcc $(CFLAGS) $(OBJ) $(patsubst %.c,%.o,$(SRC))
+CC=gcc -Wall -Werror -Wextra -pedantic $(patsubst %.c,%.o,$(SRC))
 SRC=main.c holberton.c
 NAME=holberton
-CFLAGS= -Wall -Werror -Wextra -pedantic
 
 all: 
 	$(CC) -o $(NAME)
