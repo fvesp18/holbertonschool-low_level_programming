@@ -2,10 +2,10 @@ CC=gcc -Wall -Werror -Wextra -pedantic $(patsubst %.c,%.o,$(SRC))
 SRC=main.c holberton.c
 NAME=holberton
 
-all: 
+all: m.h
 	$(CC) -o $(NAME)
 
-clean: 
+clean:
 	$(RM) *~ $(NAME)
 
 oclean:
